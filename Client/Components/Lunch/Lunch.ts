@@ -3,12 +3,14 @@
  */
 class Lunch extends Application {
     public createdCallback(): void {
+        super.createdCallback();
         this.dataContext = new Observable(new ViewModel());
     }
     public attachedCallback(): void {
+        super.attachedCallback();
     }
     public navigateTo(c: Component) {
-        this.removeChild(this.firstElementChild);
+        // this.removeChild(this.firstElementChild);
         this.appendChild(c);
     }
 }

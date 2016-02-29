@@ -29,11 +29,9 @@ namespace LunchUX
         public void ConfigureServices(IServiceCollection services)
         {
             // Add EF
-            // TODO: Use configuration for connection string
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=LunchUX;Trusted_Connection=True;";
             services.AddEntityFramework()
                 .AddSqlServer()
-                .AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+                .AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
 
             // Add framework services.
             services.AddMvc();

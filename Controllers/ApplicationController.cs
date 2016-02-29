@@ -37,7 +37,7 @@ namespace LunchUX.Controllers
         public async Task<IActionResult> Post([FromBody]Application app)
         {
             var existing = _db.Applications
-                .FirstOrDefault(a => a.Phone == app.Phone && a.Email == app.Email);
+                .FirstOrDefault(a => a.Phone == app.Phone || a.Email.ToLowerInvariant() == app.Email.ToLowerInvariant());
             if (existing != null) {
                 return HttpBadRequest("An application already exists with this contact information.");
             }

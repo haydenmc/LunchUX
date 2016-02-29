@@ -1,0 +1,24 @@
+{
+    "introHeader": "National School Lunch Program", 
+    "introBlurb": "The National School Lunch Program is a federally assisted meal program operating in public and nonprofit private schools and residential child care institutions. It provides nutritionally balanced, low-cost or free lunches to children each school day.",
+    "introBeginButtonText": "Begin",
+    "languageHeader": "Language",
+    "englishLanguageNameBlurb": "I prefer to complete the application in English",
+    "spanishLanguageNameBlurb": "Prefiero llenar la solicitud en español",
+    "chineseLanguageNameBlurb": "我更愿意完成在西班牙语中的应用",
+    "frenchLanguageNameBlurb": "Je préfère remplir la demande en espagnol",
+    "vietnameseLanguageNameBlurb": "Tôi muốn hoàn thành ứng dụng tiếng Tây Ban Nha",
+    "tagalogLanguageNameBlurb": "I prefer to complete the application in English",
+    "arabicLanguageNameBlurb": "أنا أفضل لاستكمال الطلب بالإسبانية",
+    "koreanLanguageNameBlurb": "난 스페인어에서 응용 프로그램 작성을 선호 합니다",
+    
+    "accountInfoHeader": "Why Register?",
+    "accountInfoBlurb": "* indicates optional fields. We recommend using a password so you can access your application later.",
+    "accountInfoFormHeader": "Your Account",
+    "accountInfoPlaceholderFirstName": "First Name",
+    "accountInfoPlaceholderLastName": "Last Name",
+    "accountInfoPlaceholderEmail": "Email",
+    "accountInfoPlaceholderPhone": "Phone Number",
+    "accountInfoPlaceholderPassword": "Password",
+    "accountInfoButtonNext": "Next"
+}

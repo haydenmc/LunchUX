@@ -1,4 +1,11 @@
 @import '../../Styles/Common/Header';
-@import '../../Styles/Common/BigButton';
 @import '../../Styles/Common/HighlightPane';
 @import '../../Styles/Common/SubHeader';
+
+ul {
+    list-style-type: none;
+    padding-left: 16px;
+    li {
+        margin: 4px;
+    }
+}

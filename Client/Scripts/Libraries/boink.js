@@ -978,8 +978,9 @@ var JsonRequest = (function () {
      * @param httpMethod HTTP method used in request
      * @param postData POST data to send, if the method used is post
      * @param authorization string Authorization header information
+     * @param contentType Content-Type header
      */
-    JsonRequest.httpRequest = function (url, method, postData, authorization) {
+    JsonRequest.httpRequest = function (url, method, postData, authorization, contentType) {
         // I promise I'll do this. Pinky swear.
         return new Promise(function (resolve, reject) {
             var req = new XMLHttpRequest();
@@ -993,6 +994,9 @@ var JsonRequest = (function () {
             }
             if (typeof authorization !== "undefined") {
                 req.setRequestHeader("Authorization", authorization);
+            }
+            if (typeof contentType !== "undefined") {
+                req.setRequestHeader("Content-Type", contentType);
             }
             req.onload = function () {
                 // This is called even on 404 etc
@@ -1029,9 +1033,10 @@ var JsonRequest = (function () {
      *
      * @param url URL to request
      * @param authorization Authorization header
+     * @param contentType Content-Type header
      */
-    JsonRequest.httpGet = function (url, authorization) {
-        return JsonRequest.httpRequest(url, httpMethod.GET, null, authorization);
+    JsonRequest.httpGet = function (url, authorization, contentType) {
+        return JsonRequest.httpRequest(url, httpMethod.GET, null, authorization, contentType);
     };
     /**
      * A method to perform a POST HTTP request and parse resulting JSON
@@ -1039,9 +1044,10 @@ var JsonRequest = (function () {
      * @param url URL to request
      * @param postData JSON post data to send
      * @param authorization Authorization header
+     * @param contentType Content-Type header
      */
-    JsonRequest.httpPost = function (url, postData, authorization) {
-        return JsonRequest.httpRequest(url, httpMethod.POST, postData, authorization);
+    JsonRequest.httpPost = function (url, postData, authorization, contentType) {
+        return JsonRequest.httpRequest(url, httpMethod.POST, postData, authorization, contentType);
     };
     return JsonRequest;
 }());

@@ -466,23 +466,26 @@ declare class JsonRequest {
      * @param httpMethod HTTP method used in request
      * @param postData POST data to send, if the method used is post
      * @param authorization string Authorization header information
+     * @param contentType Content-Type header
      */
-    private static httpRequest<T>(url, method, postData?, authorization?);
+    private static httpRequest<T>(url, method, postData?, authorization?, contentType?);
     /**
      * A method to perform a GET HTTP request and parse resulting JSON
      *
      * @param url URL to request
      * @param authorization Authorization header
+     * @param contentType Content-Type header
      */
-    static httpGet<T>(url: string, authorization?: string): Promise<T>;
+    static httpGet<T>(url: string, authorization?: string, contentType?: string): Promise<T>;
     /**
      * A method to perform a POST HTTP request and parse resulting JSON
      *
      * @param url URL to request
      * @param postData JSON post data to send
      * @param authorization Authorization header
+     * @param contentType Content-Type header
      */
-    static httpPost<T>(url: string, postData: any, authorization?: string): Promise<T>;
+    static httpPost<T>(url: string, postData: any, authorization?: string, contentType?: string): Promise<T>;
 }
 /**
  * A simple value store that notifies any subscribers of changes to its value.

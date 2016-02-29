@@ -42,6 +42,10 @@ gulp.task("images", function () {
     return gulp.src(["Client/Images/*"]).pipe(gulp.dest("wwwroot/Images/"));
 })
 
+gulp.task("languages", function() {
+    return gulp.src(["Client/Scripts/Data/Languages/*.json"]).pipe(gulp.dest("wwwroot/Languages/"));
+});
+
 gulp.task("html", function() {
    var folders = getFolders(componentDirectory);
    var tasks = folders.map(function(folder) {
@@ -78,4 +82,4 @@ gulp.task("watch", function () {
     });
 });
 
-gulp.task("default", ["ts", "js", "css", "fonts", "images", "html"]);
+gulp.task("default", ["ts", "js", "css", "fonts", "images", "languages", "html"]);
