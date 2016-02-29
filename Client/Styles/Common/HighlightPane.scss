@@ -1,0 +1,13 @@
+@import 'Constants';
+
+.highlightPane {
+    background-color: $color-highlight-bg;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    .inner {
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: $color-bg;
+    }
+}

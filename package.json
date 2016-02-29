@@ -1,0 +1,20 @@
+{
+  "name": "lunchux",
+  "version": "1.0.0",
+  "description": "LunchUX hackathon entry",
+  "author": "Hayden McAfee <hayden@outlook.com>",
+  "devDependencies": {
+      "gulp": "3.x.x",
+      "gulp-concat": "2.5.2",
+      "gulp-cssmin": "0.1.7",
+      "gulp-sass": "2.x.x",
+      "gulp-typescript": "2.x.x",
+      "typescript": "1.x.x",
+      "gulp-watch": "4.x.x",
+      "gulp-inject": "3.x.x",
+      "webcomponents.js": "0.x.x",
+      "es6-promise": "3.x.x",
+      "event-stream": "3.x.x",
+      "typings": "0.x.x"
+  }
+}

@@ -1,0 +1,8 @@
+@import 'Constants';
+@import 'Fonts';
+
+h2 {
+    font-family: "Slabo";
+    color: $color-text;
+    border-bottom: 1px solid $color-text;
+}

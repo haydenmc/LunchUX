@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "outFile": "wwwroot/application.js",
+        "sourceMap": true,
+        "target": "es5",
+        "declaration": true
+    },
+    "filesGlob": [
+        "Client/Components/**/*.ts",
+        "Client/Scripts/**/*.ts"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "lunchux",
+  "dependencies": {},
+  "devDependencies": {},
+  "ambientDependencies": {
+    "es6-promise": "github:DefinitelyTyped/DefinitelyTyped/es6-promise/es6-promise.d.ts#830e8ebd9ef137d039d5c7ede24a421f08595f83"
+  }
+}
