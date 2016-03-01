@@ -1,7 +1,7 @@
-class ChildrenPage extends Component {
+class AdultsPage extends Component {
     public attachedCallback(): void {
         super.attachedCallback();
-        this.shadowRoot.querySelector("li.add").addEventListener("click", (ev) => {
+        this.shadowRoot.querySelector("li.add").addEventListener("click", () => {
             this.invokeAddDialog();
         });
         this.shadowRoot.querySelector("button").addEventListener("click", (ev) => {
@@ -10,12 +10,12 @@ class ChildrenPage extends Component {
         });
     }
     public invokeAddDialog() {
-        this.parentElement.appendChild(document.createElement("lunch-dialog-add-child"));
+        this.parentElement.appendChild(document.createElement("lunch-dialog-add-adult"));
     }
     public nextPage() {
         this.shadowRoot.querySelector("button").disabled = true;
         var lunch = <Lunch>this.parentComponent;
-        lunch.navigateTo(<AdultsPage>document.createElement("lunch-page-adults"));
+        lunch.navigateTo(<AdultsPage>document.createElement("lunch-page-social-security"));
     }
 }
-Component.register("lunch-page-children", ChildrenPage);
+Component.register("lunch-page-adults", AdultsPage);

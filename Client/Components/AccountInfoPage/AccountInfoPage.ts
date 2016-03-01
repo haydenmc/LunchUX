@@ -20,6 +20,7 @@ class AccountInfoPage extends Component {
         });
     }
     public continue(): void {
+        this.shadowRoot.querySelector("button").disabled = true;
         var application = <ApplicationModel>this.dataContext.value.application.value;
         application.firstName.value = this.shadowRoot.querySelector("#firstName").value;
         application.lastName.value = this.shadowRoot.querySelector("#lastName").value;

@@ -7,6 +7,7 @@ class HouseholdRolePage extends Component {
         });
     }
     public submit(): void {
+        this.shadowRoot.querySelector("button").disabled = true;
         var lunch = <Lunch>this.parentComponent;
         lunch.navigateTo(<CaseNumberPage>document.createElement("lunch-page-case-number"));
     }

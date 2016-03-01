@@ -8,6 +8,8 @@ class CaseNumberPage extends Component {
     }
     
     public nextPage(): void {
+        this.shadowRoot.querySelector("button.noCase").disabled = true;
+        this.shadowRoot.querySelector("button.next").disabled = true;
         var lunch = <Lunch>this.parentComponent;
         lunch.navigateTo(<ChildrenPage>document.createElement("lunch-page-children"));
     }

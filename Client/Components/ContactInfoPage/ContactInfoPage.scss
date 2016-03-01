@@ -1,0 +1,24 @@
+@import '../../Styles/Common/Card';
+@import '../../Styles/Common/Input';
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.addressLineOne {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.city {
+    width: 40%;
+    flex-grow: 1;
+}
+.state {
+    width: 20%;
+}
+.zip {
+    width: 30%;
+}

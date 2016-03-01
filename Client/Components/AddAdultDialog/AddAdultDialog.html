@@ -1,0 +1,32 @@
+<template id="lunch-dialog-add-adult">
+    <!-- inject:css -->
+    <!-- endinject -->
+    <div class="dialogOverlay">
+        <div class="dialogCard">
+            <div class="inner">
+                <h1>{{languageResources.addAdultFormHeader}}</h1>
+                <form>
+                    <input name="firstName" class="firstName" type="text" />
+                    <input name="lastName" class="lastName" type="text" />
+                    <br />
+                    <label>{{languageResources.addAdultWorkEarnings}}</label>
+                    <br />
+                    <input name="workEarnings" class="workEarnings" />
+                    <br />
+                    <label>{{languageResources.addAdultPublicAssistance}}</label>
+                    <br />
+                    <input name="publicAssistance" class="publicAssistance" />
+                    <br />
+                    <label>{{languageResources.addAdultAllOtherIncome}}</label>
+                    <br />
+                    <input name="allOtherIncome" class="allOtherIncome" />
+                    <br />
+                    <div class="buttonBar">
+                        <button class="button cancel">{{languageResources.buttonCancel}}</button>
+                        <button class="button add">{{languageResources.buttonAdd}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

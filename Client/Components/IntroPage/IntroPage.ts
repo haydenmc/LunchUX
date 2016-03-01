@@ -7,6 +7,7 @@ class IntroPage extends Component {
         });
     }
     public continue(): void {
+        this.shadowRoot.querySelector("button").disabled = true;
         var lunch = <Lunch>this.parentComponent;
         lunch.navigateTo(<AccountInfoPage>document.createElement("lunch-page-account-info"));
     }

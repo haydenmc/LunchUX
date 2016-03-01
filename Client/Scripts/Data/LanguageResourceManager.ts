@@ -51,4 +51,28 @@ class LanguageResourceManager {
     public addChildIsStudent: IObservable<string> = new Observable<string>("");
     public addChildIsFoster: IObservable<string> = new Observable<string>("");
     public addChildIsHomelessMigrantRunaway: IObservable<string> = new Observable<string>("");
+    /* Adults page */
+    public adultsHeader: IObservable<string> = new Observable<string>("");
+    public adultsBlurb: IObservable<string> = new Observable<string>("");
+    public adultsFormHeader: IObservable<string> = new Observable<string>("");
+    /* Add adult dialog */
+    public addAdultFormHeader: IObservable<string> = new Observable<string>("");
+    public addAdultWorkEarnings: IObservable<string> = new Observable<string>("");
+    public addAdultPublicAssistance: IObservable<string> = new Observable<string>("");
+    public addAdultAllOtherIncome: IObservable<string> = new Observable<string>("");
+    /* Social security page */
+    public socialSecurityHeader: IObservable<string> = new Observable<string>("");
+    public socialSecurityBlurb: IObservable<string> = new Observable<string>("");
+    public socialSecurityFormHeader: IObservable<string> = new Observable<string>("");
+    public socialSecurityTip: IObservable<string> = new Observable<string>("");
+    public socialSecuritySSN: IObservable<string> = new Observable<string>("");
+    public socialSecurityNoSSN: IObservable<string> = new Observable<string>("");
+    /* Contact info page */
+    public contactInfoHeader: IObservable<string> = new Observable<string>("");
+    public contactInfoBlurb: IObservable<string> = new Observable<string>("");
+    public contactInfoFormHeader: IObservable<string> = new Observable<string>("");
+    public contactInfoStreetAddress: IObservable<string> = new Observable<string>("");
+    public contactInfoCity: IObservable<string> = new Observable<string>("");
+    public contactInfoState: IObservable<string> = new Observable<string>("");
+    public contactInfoZip: IObservable<string> = new Observable<string>("");
 }

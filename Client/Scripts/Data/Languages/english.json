@@ -45,11 +45,35 @@
     "caseNumberButtonNoCaseNumber": "No Case Number",
     
     "childrenHeader": "Children in Household",
-    "childrenBlurb": "List all infants, children, and students enrolled in and up to grade 12 living in your household. You will also need to report your children's income which is defined as money received from outside the household that is paid directly to the children",
+    "childrenBlurb": "List all infants, children, and students enrolled in and up to grade 12 living in your household. You will also need to report your children's income which is defined as money received from outside the household that is paid directly to the children.",
     "childrenFormHeader": "Children",
     
     "addChildFormHeader": "Adding Child",
     "addChildIsStudent": "Is this child currently a student?",
     "addChildIsFoster": "Is this child currently a foster child?",
-    "addChildIsHomelessMigrantRunaway": "Is this child currently homeless, a migrant, or a runaway?"
+    "addChildIsHomelessMigrantRunaway": "Is this child currently homeless, a migrant, or a runaway?",
+    
+    "adultsHeader": "Adults in Household",
+    "adultsBlurb": "List all adults living in your household. You will also need to each adult's income.",
+    "adultsFormHeader": "Adults",
+    
+    "addAdultFormHeader": "Adding Adult",
+    "addAdultWorkEarnings": "How much a month do you earn from work?",
+    "addAdultPublicAssistance": "How much a month do you get in public assistance, child support, or alimony?",
+    "addAdultAllOtherIncome": "How much a month do you get in pensions, retirement, or other sources?",
+    
+    "socialSecurityHeader": "Social Security",
+    "socialSecurityBlurb": "Please provide the last 4 digits of the Social Security Number (SSN) of the primary wage earner or other adult. If you don't want to or can't provide an SSN, don't worry: the NSLP entitles all eligible children to free school lunches regardless of their citizenship status.",
+    "socialSecurityFormHeader": "Social Security Number",
+    "socialSecurityTip": "The SSN should be the primary wage earner's, otherwise another adult's.",
+    "socialSecuritySSN": "SSN - Last 4 digits",
+    "socialSecurityNoSSN": "No SSN",
+    
+    "contactInfoHeader": "How Can We Contact You?",
+    "contactInfoBlurb": "Please provide your home address and other contact information. This information is optional but will help us better reach you.",
+    "contactInfoFormHeader": "Contact Information",
+    "contactInfoStreetAddress": "Street Address",
+    "contactInfoCity": "City",
+    "contactInfoState": "State",
+    "contactInfoZip": "Zip"
 }

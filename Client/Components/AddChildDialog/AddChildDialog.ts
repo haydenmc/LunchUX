@@ -15,21 +15,24 @@ class AddChildDialog extends Component {
             ev.preventDefault();
             this.addChild();
         });
+        this.shadowRoot.querySelector("button.cancel").addEventListener("click", (ev) => {
+            ev.preventDefault();
+            this.parentElement.removeChild(this);
+        });
     }
     
     public addChild(): void {
         var child = new Child();
-        var form = this.shadowRoot.querySelector("form");
-        child.firstName.value = form.elements["firstName"].value;
-        child.middleInitial.value = form.elements["middleInitial"].value;
-        child.lastName.value = form.elements["lastName"].value;
+        child.firstName.value = this.shadowRoot.querySelector(".firstName").value;
+        child.middleInitial.value = this.shadowRoot.querySelector(".middleInitial").value;
+        child.lastName.value = this.shadowRoot.querySelector(".lastName").value;
         child.isStudent.value   
             = (this.shadowRoot.querySelector('input[name="isStudent"]:checked').value)
         child.isFosterChild.value
             = (this.shadowRoot.querySelector('input[name="isFosterChild"]:checked').value)
         child.isHomelessMigrantRunaway.value
             = (this.shadowRoot.querySelector('input[name="isHomelessMigrantRunaway"]:checked').value)
-        child.income.value = form.elements["income"].value;
+        child.income.value = this.shadowRoot.querySelector(".income").value;
         child.incomeCadence.value = PayCadence.Monthly;
         this.dataContext.value.application.value.children.value.push(child);
         this.parentElement.removeChild(this);

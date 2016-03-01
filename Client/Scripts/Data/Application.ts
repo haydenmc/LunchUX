@@ -7,4 +7,6 @@ class ApplicationModel {
     public password: Observable<string> = new Observable<string>("");
     public children: Observable<ObservableArray<Child>>
         = new Observable<ObservableArray<Child>>(new ObservableArray<Child>());
+    public adults: Observable<ObservableArray<Adult>>
+        = new Observable<ObservableArray<Adult>>(new ObservableArray<Adult>());
 }
