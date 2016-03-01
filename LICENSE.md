@@ -1,7 +1,6 @@
 The MIT License (MIT)
 
 Copyright (c) 2016 Hayden McAfee
-
 Copyright (c) 2016 Chris Wan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
