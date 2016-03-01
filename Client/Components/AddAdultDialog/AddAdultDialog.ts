@@ -22,12 +22,15 @@ class AddAdultDialog extends Component {
             this.parentElement.removeChild(this);
         });
         this.shadowRoot.querySelector("a.help.workEarningsHelp").addEventListener("click", (ev) => {
+            ev.preventDefault();
             this.parentElement.appendChild(document.createElement("lunch-help-work-income"));
         });
         this.shadowRoot.querySelector("a.help.publicAssistanceHelp").addEventListener("click", (ev) => {
+            ev.preventDefault();
             this.parentElement.appendChild(document.createElement("lunch-help-public-assistance"));
         });
         this.shadowRoot.querySelector("a.help.otherIncomeHelp").addEventListener("click", (ev) => {
+            ev.preventDefault();
             this.parentElement.appendChild(document.createElement("lunch-help-other-income"));
         });
     }
