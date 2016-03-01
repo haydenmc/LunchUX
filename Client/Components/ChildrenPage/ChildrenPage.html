@@ -1,0 +1,30 @@
+<template id="lunch-page-children">
+    <!-- inject:css -->
+    <!-- endinject -->
+    <div class="cardPair">
+        <div class="description">
+            <h1>{{languageResources.childrenHeader}}</h1>
+            <p>
+                {{languageResources.childrenBlurb}}
+            </p>
+        </div>
+        <div class="card">
+            <div class="inner">
+                <h1>{{languageResources.childrenFormHeader}}</h1>
+                <ul>
+                    <ui-repeater data-context="{{application.children}}">
+                        <template>
+                            <li>{{firstName}} {{lastName}}</li>
+                        </template>
+                    </ui-repeater>
+                    <li class="add">Add Child</li>
+                </ul>
+                <form>
+                    <div class="buttonBar">
+                        <button class="button">{{languageResources.buttonNext}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

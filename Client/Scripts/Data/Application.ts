@@ -5,4 +5,6 @@ class ApplicationModel {
     public email: Observable<string> = new Observable<string>("");
     public phone: Observable<string> = new Observable<string>("");
     public password: Observable<string> = new Observable<string>("");
+    public children: Observable<ObservableArray<Child>>
+        = new Observable<ObservableArray<Child>>(new ObservableArray<Child>());
 }

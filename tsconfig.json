@@ -12,5 +12,6 @@
     "filesGlob": [
         "Client/Components/**/*.ts",
         "Client/Scripts/**/*.ts"
-    ]
+    ],
+    "files": []
 }

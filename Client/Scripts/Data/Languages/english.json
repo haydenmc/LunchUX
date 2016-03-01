@@ -1,5 +1,14 @@
 {
     "buttonNext": "Next",
+    "buttonAdd": "Add",
+    "buttonCancel": "Nevermind",
+    "yes": "Yes",
+    "no": "No",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "middleInitialAbbrev": "M.I.",
+    "monthlyIncome": "Monthly Income",
+    
     "introHeader": "National School Lunch Program", 
     "introBlurb": "The National School Lunch Program is a federally assisted meal program operating in public and nonprofit private schools and residential child care institutions. It provides nutritionally balanced, low-cost or free lunches to children each school day.",
     "introBeginButtonText": "Begin",
@@ -33,5 +42,14 @@
     "caseNumberHeader": "Participation in an Assistance Program",
     "caseNumberBlurb": "Do you or someone in your household participate in one of these programs: ...",
     "caseNumberFormHeader": "Assistance Program Case Number",
-    "caseNumberButtonNoCaseNumber": "No Case Number"
+    "caseNumberButtonNoCaseNumber": "No Case Number",
+    
+    "childrenHeader": "Children in Household",
+    "childrenBlurb": "List all infants, children, and students enrolled in and up to grade 12 living in your household. You will also need to report your children's income which is defined as money received from outside the household that is paid directly to the children",
+    "childrenFormHeader": "Children",
+    
+    "addChildFormHeader": "Adding Child",
+    "addChildIsStudent": "Is this child currently a student?",
+    "addChildIsFoster": "Is this child currently a foster child?",
+    "addChildIsHomelessMigrantRunaway": "Is this child currently homeless, a migrant, or a runaway?"
 }

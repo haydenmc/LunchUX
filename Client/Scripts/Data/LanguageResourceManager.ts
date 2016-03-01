@@ -1,6 +1,14 @@
 class LanguageResourceManager {
     /* Common */
     public buttonNext: IObservable<string> = new Observable<string>("");
+    public buttonAdd: IObservable<string> = new Observable<string>("");
+    public buttonCancel: IObservable<string> = new Observable<string>("");
+    public yes: IObservable<string> = new Observable<string>("");
+    public no: IObservable<string> = new Observable<string>("");
+    public firstName: IObservable<string> = new Observable<string>("");
+    public lastName: IObservable<string> = new Observable<string>("");
+    public middleInitialAbbrev: IObservable<string> = new Observable<string>("");
+    public monthlyIncome: IObservable<string> = new Observable<string>(""); 
     /* Introduction page */
     public introHeader: IObservable<string> = new Observable<string>("");
     public introBlurb: IObservable<string> = new Observable<string>("");
@@ -34,4 +42,13 @@ class LanguageResourceManager {
     public caseNumberBlurb: IObservable<string> = new Observable<string>("");
     public caseNumberFormHeader: IObservable<string> = new Observable<string>("");
     public caseNumberButtonNoCaseNumber: IObservable<string> = new Observable<string>("");
+    /* Children page */
+    public childrenHeader: IObservable<string> = new Observable<string>("");
+    public childrenBlurb: IObservable<string> = new Observable<string>("");
+    public childrenFormHeader: IObservable<string> = new Observable<string>("");
+    /* Add child dialog */
+    public addChildFormHeader: IObservable<string> = new Observable<string>("");
+    public addChildIsStudent: IObservable<string> = new Observable<string>("");
+    public addChildIsFoster: IObservable<string> = new Observable<string>("");
+    public addChildIsHomelessMigrantRunaway: IObservable<string> = new Observable<string>("");
 }
