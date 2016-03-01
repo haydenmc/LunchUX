@@ -12,6 +12,10 @@ class Lunch extends Application {
     public navigateTo(c: Component) {
         // this.removeChild(this.firstElementChild);
         this.appendChild(c);
+        setTimeout(() => {
+            this.parentElement.scrollTop = this.parentElement.scrollHeight;
+        }, 100);
+        
     }
 }
 Component.register("lunch-application", Lunch);
