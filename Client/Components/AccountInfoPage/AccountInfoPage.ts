@@ -31,7 +31,7 @@ class AccountInfoPage extends Component {
         // this.dataContext.value.createApplication();
         // TODO: Listen to return value and show error.
         var lunch = <Lunch>this.parentComponent;
-        lunch.navigateTo(<HouseholdRolePage>document.createElement("lunch-page-household-role"));
+        lunch.navigateTo(<AgreementPage>document.createElement("lunch-page-agreement"));
     }
 }
 Component.register("lunch-page-account-info", AccountInfoPage);

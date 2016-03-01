@@ -49,6 +49,13 @@ namespace LunchUX
             app.UseStaticFiles();
 
             app.UseMvc();
+            
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+                        .CreateScope())
+            {
+                serviceScope.ServiceProvider.GetService<ApplicationDbContext>()
+                        .Database.Migrate();
+            }
         }
 
         // Entry point for the application.

@@ -84,13 +84,11 @@ namespace LunchUX.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Application_Email",
                 table: "Application",
-                column: "Email",
-                unique: true);
+                column: "Email");
             migrationBuilder.CreateIndex(
                 name: "IX_Application_Phone",
                 table: "Application",
-                column: "Phone",
-                unique: true);
+                column: "Phone");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

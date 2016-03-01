@@ -9,6 +9,8 @@ class LanguageResourceManager {
     public lastName: IObservable<string> = new Observable<string>("");
     public middleInitialAbbrev: IObservable<string> = new Observable<string>("");
     public monthlyIncome: IObservable<string> = new Observable<string>(""); 
+    public iAgree: IObservable<string> = new Observable<string>("");
+    public submit: IObservable<string> = new Observable<string>("");
     /* Introduction page */
     public introHeader: IObservable<string> = new Observable<string>("");
     public introBlurb: IObservable<string> = new Observable<string>("");
@@ -32,11 +34,10 @@ class LanguageResourceManager {
     public accountInfoPlaceholderPhone: IObservable<string> = new Observable<string>("");
     public accountInfoPlaceholderPassword: IObservable<string> = new Observable<string>("");
     /* Household role page */
-    public householdRoleHeader: IObservable<string> = new Observable<string>("");
-    public householdRoleBlurb: IObservable<string> = new Observable<string>("");
-    public householdRoleFormHeader: IObservable<string> = new Observable<string>("");
-    public householdRoleChild: IObservable<string> = new Observable<string>("");
-    public householdRoleAdult: IObservable<string> = new Observable<string>("");
+    public agreementHeader: IObservable<string> = new Observable<string>("");
+    public agreementBlurb: IObservable<string> = new Observable<string>("");
+    public agreementFormHeader: IObservable<string> = new Observable<string>("");
+    public agreementFormBlurb: IObservable<string> = new Observable<string>("");
     /* Case number page */
     public caseNumberHeader: IObservable<string> = new Observable<string>("");
     public caseNumberBlurb: IObservable<string> = new Observable<string>("");
@@ -75,4 +76,8 @@ class LanguageResourceManager {
     public contactInfoCity: IObservable<string> = new Observable<string>("");
     public contactInfoState: IObservable<string> = new Observable<string>("");
     public contactInfoZip: IObservable<string> = new Observable<string>("");
+    /* Additional info page */
+    public additionalInfoHeader: IObservable<string> = new Observable<string>("");
+    public additionalInfoBlurb: IObservable<string> = new Observable<string>("");
+    public additionalInfoFormHeader: IObservable<string> = new Observable<string>("");
 }

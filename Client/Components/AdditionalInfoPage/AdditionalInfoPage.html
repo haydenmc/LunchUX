@@ -1,0 +1,49 @@
+<template id="lunch-page-additional-info">
+    <!-- inject:css -->
+    <!-- endinject -->
+    <div class="cardPair">
+        <div class="description">
+            <h1>{{languageResources.additionalInfoHeader}}</h1>
+            <p>
+                {{languageResources.additionalInfoBlurb}}
+            </p>
+        </div>
+        <div class="card">
+            <div class="inner">
+                <h1>{{languageResources.additionalInfoFormHeader}}</h1>
+                <form>
+                    <br />
+                    <label>Ethnicity (check one)</label>
+                    <br />
+                    <input id="ethnicityHispanic" name="ethnicity" type="checkbox" value="hispanic" />
+                    <label for="ethnicityHispanic">Hispanic or Latino</label>
+                    <br />
+                    <input id="ethnicityNotHispanic" name="ethnicity" type="checkbox" value="hispanic" />
+                    <label for="ethnicityNotHispanic">Not Hispanic or Latino</label>
+                    <br />
+                    <br />
+                    <label>Race</label>
+                    <br />
+                    <input name="race" type="checkbox" />
+                    <label>American Indian or Alaskan Native</label>
+                    <br />
+                    <input name="race" type="checkbox" />
+                    <label>Asian</label>
+                    <br />
+                    <input name="race" type="checkbox" />
+                    <label>Black or African American</label>
+                    <br />
+                    <input name="race" type="checkbox" />
+                    <label>Native Hawaiian or Pacific Islander</label>
+                    <br />
+                    <input name="race" type="checkbox" />
+                    <label>White</label>
+                    <br />
+                    <div class="buttonBar">
+                        <button class="button">{{languageResources.submit}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

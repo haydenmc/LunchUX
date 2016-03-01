@@ -8,6 +8,8 @@
     "lastName": "Last Name",
     "middleInitialAbbrev": "M.I.",
     "monthlyIncome": "Monthly Income",
+    "iAgree": "I Agree",
+    "submit": "Submit",
     
     "introHeader": "National School Lunch Program", 
     "introBlurb": "The National School Lunch Program is a federally assisted meal program operating in public and nonprofit private schools and residential child care institutions. It provides nutritionally balanced, low-cost or free lunches to children each school day.",
@@ -32,12 +34,10 @@
     "accountInfoPlaceholderPassword": "Password",
     "accountInfoButtonNext": "Continue",
     
-    "householdRoleHeader": "You and Your Family",
-    "householdRoleBlurb": "By understanding your role within your household, we can better tailor the application to help guide you.",
-    "householdRoleFormHeader": "Your Household Role",
-    "householdRoleChild": "Child",
-    "householdRoleAdult": "Adult",
-    "householdRoleButtonNext": "Continue",
+    "agreementHeader": "Providing Accurate Information",
+    "agreementBlurb": "You must agree to provide accurate information when filling out this application.",
+    "agreementFormHeader": "Agreement",
+    "agreementFormBlurb": "By clicking 'I Agree' you state your intent to provide accurate information in this application.",
     
     "caseNumberHeader": "Participation in an Assistance Program",
     "caseNumberBlurb": "Do you or someone in your household participate in one of these programs: ...",
@@ -75,5 +75,9 @@
     "contactInfoStreetAddress": "Street Address",
     "contactInfoCity": "City",
     "contactInfoState": "State",
-    "contactInfoZip": "Zip"
+    "contactInfoZip": "Zip",
+    
+    "additionalInfoHeader": "Some Final Information",
+    "additionalInfoBlurb": "This information is optional. Once you click 'submit' your application will be submitted.",
+    "additionalInfoFormHeader": "Additional Information"
 }

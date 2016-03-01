@@ -10,6 +10,9 @@ class SocialSecurityPage extends Component {
     }
     public nextPage(): void {
         this.shadowRoot.querySelector("button").disabled = true;
+        var application = <ApplicationModel>this.dataContext.value.application.value;
+        application.lastFourSSN.value = this.shadowRoot.querySelector("input.SSN").value;
+        application.noSSN.value = this.shadowRoot.querySelector("input.noSSN").value;
         var lunch = <Lunch>this.parentComponent;
         lunch.navigateTo(<ContactInfoPage>document.createElement("lunch-page-contact-info"));
     }

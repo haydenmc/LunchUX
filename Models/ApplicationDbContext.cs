@@ -27,12 +27,12 @@ namespace LunchUX.Models {
             modelBuilder
                 .Entity<Application>()
                 .HasIndex(a => a.Email)
-                .IsUnique(true);
+                .IsUnique(false);
 
             modelBuilder
                 .Entity<Application>()
                 .HasIndex(a => a.Phone)
-                .IsUnique(true);
+                .IsUnique(false);
         }
     }
 }

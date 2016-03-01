@@ -1,4 +1,4 @@
-class HouseholdRolePage extends Component {
+class AgreementPage extends Component {
     public attachedCallback(): void {
         super.attachedCallback();
         this.shadowRoot.querySelector("button").addEventListener("click", (ev) => {
@@ -12,4 +12,4 @@ class HouseholdRolePage extends Component {
         lunch.navigateTo(<CaseNumberPage>document.createElement("lunch-page-case-number"));
     }
 }
-Component.register("lunch-page-household-role", HouseholdRolePage);
+Component.register("lunch-page-agreement", AgreementPage);

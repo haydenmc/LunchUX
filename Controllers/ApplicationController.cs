@@ -17,6 +17,15 @@ namespace LunchUX.Controllers
             _db = db;
         }
         
+        // GET 
+        [HttpGet("")]
+        public IActionResult Get() {
+            var apps = _db.Applications
+                .Include(a => a.Adults)
+                .Include(a => a.Children);
+            return new ObjectResult(apps);
+        }
+        
         // GET api/values/5
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
@@ -36,19 +45,20 @@ namespace LunchUX.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Application app)
         {
-            var existing = _db.Applications
-                .FirstOrDefault(a => a.Phone == app.Phone || a.Email.ToLowerInvariant() == app.Email.ToLowerInvariant());
-            if (existing != null) {
-                return HttpBadRequest("An application already exists with this contact information.");
+            app.ApplicationId = Guid.NewGuid();
+            app.DateSubmitted = DateTimeOffset.Now;
+            app.IsSubmitted = true;
+            foreach (var c in app.Children) {
+                c.ChildId = Guid.NewGuid();
+                _db.Children.Add(c);
             }
-            var newApp = new Application() {
-                ApplicationId = Guid.NewGuid(),
-                Phone = app.Phone,
-                Email = app.Email
-            };
-            _db.Applications.Add(newApp);
+            foreach (var a in app.Adults) {
+                a.AdultId = Guid.NewGuid();
+                _db.Adults.Add(a);
+            }
+            _db.Applications.Add(app);
             await _db.SaveChangesAsync();
-            return new ObjectResult(newApp);
+            return new ObjectResult(app);
         }
 
         // PUT api/values/5

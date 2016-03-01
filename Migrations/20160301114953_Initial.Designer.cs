@@ -8,7 +8,7 @@ using LunchUX.Models;
 namespace LunchUX.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20160229044102_Initial")]
+    [Migration("20160301114953_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,11 +80,9 @@ namespace LunchUX.Migrations
 
                     b.HasKey("ApplicationId");
 
-                    b.HasIndex("Email")
-                        .IsUnique();
+                    b.HasIndex("Email");
 
-                    b.HasIndex("Phone")
-                        .IsUnique();
+                    b.HasIndex("Phone");
                 });
 
             modelBuilder.Entity("LunchUX.Models.Child", b =>

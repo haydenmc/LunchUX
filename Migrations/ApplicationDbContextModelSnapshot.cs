@@ -79,11 +79,9 @@ namespace LunchUX.Migrations
 
                     b.HasKey("ApplicationId");
 
-                    b.HasIndex("Email")
-                        .IsUnique();
+                    b.HasIndex("Email");
 
-                    b.HasIndex("Phone")
-                        .IsUnique();
+                    b.HasIndex("Phone");
                 });
 
             modelBuilder.Entity("LunchUX.Models.Child", b =>
