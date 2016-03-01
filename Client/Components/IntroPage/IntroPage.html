@@ -1,52 +1,56 @@
 <template id="lunch-page-intro">
     <!-- inject:css -->
     <!-- endinject -->
-    <h1>{{languageResources.introHeader}}</h1>
-    <p>
-        {{languageResources.introBlurb}}
-    </p>
-    <div class="highlightPane">
-        <div class="inner">
-            <h2>{{languageResources.languageHeader}}</h2>
-            <form>
-                <ul>
-                    <li>
-                        <input type="radio" id="lang_english" name="language" value="english" />
-                        <label for="lang_english">{{languageResources.englishLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_spanish" name="language" value="spanish" />
-                        <label for="lang_spanish">{{languageResources.spanishLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_chinese" name="language" value="chinese" />
-                        <label for="lang_chinese">{{languageResources.chineseLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_french" name="language" value="french" />
-                        <label for="lang_french">{{languageResources.frenchLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_vietnamese" name="language" value="vietnamese" />
-                        <label for="lang_vietnamese">{{languageResources.vietnameseLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_tagalog" name="language" value="tagalog" />
-                        <label for="lang_tagalog">{{languageResources.tagalogLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_arabic" name="language" value="arabic" />
-                        <label for="lang_arabic">{{languageResources.arabicLanguageNameBlurb}}</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="lang_korean" name="language" value="korean" />
-                        <label for="lang_korean">{{languageResources.koreanLanguageNameBlurb}}</label>
-                    </li>
-                </ul>
-                <div class="buttonBar">
-                    <button class="button">{{languageResources.introBeginButtonText}}</button>
-                </div>
-            </form>
+    <div class="cardPair">
+        <div class="description">
+            <h1>{{languageResources.introHeader}}</h1>
+            <p>
+                {{languageResources.introBlurb}}
+            </p>
+        </div>
+        <div class="card">
+            <div class="inner">
+                <h1>{{languageResources.languageHeader}}</h1>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="radio" id="lang_english" name="language" value="english" />
+                            <label for="lang_english">{{languageResources.englishLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_spanish" name="language" value="spanish" />
+                            <label for="lang_spanish">{{languageResources.spanishLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_chinese" name="language" value="chinese" />
+                            <label for="lang_chinese">{{languageResources.chineseLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_french" name="language" value="french" />
+                            <label for="lang_french">{{languageResources.frenchLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_vietnamese" name="language" value="vietnamese" />
+                            <label for="lang_vietnamese">{{languageResources.vietnameseLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_tagalog" name="language" value="tagalog" />
+                            <label for="lang_tagalog">{{languageResources.tagalogLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_arabic" name="language" value="arabic" />
+                            <label for="lang_arabic">{{languageResources.arabicLanguageNameBlurb}}</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang_korean" name="language" value="korean" />
+                            <label for="lang_korean">{{languageResources.koreanLanguageNameBlurb}}</label>
+                        </li>
+                    </ul>
+                    <div class="buttonBar">
+                        <button class="button">{{languageResources.introBeginButtonText}}</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </template>

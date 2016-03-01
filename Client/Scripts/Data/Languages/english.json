@@ -1,4 +1,5 @@
 {
+    "buttonNext": "Next",
     "introHeader": "National School Lunch Program", 
     "introBlurb": "The National School Lunch Program is a federally assisted meal program operating in public and nonprofit private schools and residential child care institutions. It provides nutritionally balanced, low-cost or free lunches to children each school day.",
     "introBeginButtonText": "Begin",
@@ -20,5 +21,17 @@
     "accountInfoPlaceholderEmail": "Email",
     "accountInfoPlaceholderPhone": "Phone Number",
     "accountInfoPlaceholderPassword": "Password",
-    "accountInfoButtonNext": "Next"
+    "accountInfoButtonNext": "Continue",
+    
+    "householdRoleHeader": "You and Your Family",
+    "householdRoleBlurb": "By understanding your role within your household, we can better tailor the application to help guide you.",
+    "householdRoleFormHeader": "Your Household Role",
+    "householdRoleChild": "Child",
+    "householdRoleAdult": "Adult",
+    "householdRoleButtonNext": "Continue",
+    
+    "caseNumberHeader": "Participation in an Assistance Program",
+    "caseNumberBlurb": "Do you or someone in your household participate in one of these programs: ...",
+    "caseNumberFormHeader": "Assistance Program Case Number",
+    "caseNumberButtonNoCaseNumber": "No Case Number"
 }

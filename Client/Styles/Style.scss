@@ -2,25 +2,16 @@
 @import 'Common/Fonts';
 
 body {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Open Sans";
     color: $color-text;
+    background: linear-gradient(170deg, #b9e986 40%, #76de91 40%) fixed;
 }
 
 lunch-application {
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    background-color: $color-bg;
+    display: block;
+    max-width: 1000px;
     padding: 16px;
     overflow-y: auto;
+    margin: 0 auto;
+    overflow: visible;
 }

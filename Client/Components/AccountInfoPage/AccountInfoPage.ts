@@ -27,9 +27,10 @@ class AccountInfoPage extends Component {
         application.phone.value = this.shadowRoot.querySelector("#tel").value;
         application.password.value = this.shadowRoot.querySelector("#password").value;
         
-        this.dataContext.value.createApplication();
+        // this.dataContext.value.createApplication();
+        // TODO: Listen to return value and show error.
         var lunch = <Lunch>this.parentComponent;
-        //lunch.navigateTo(<LanguagePage>document.createElement("lunch-page-language"));
+        lunch.navigateTo(<HouseholdRolePage>document.createElement("lunch-page-household-role"));
     }
 }
 Component.register("lunch-page-account-info", AccountInfoPage);

@@ -1,5 +1,6 @@
 @import '../../Styles/Common/Header';
-@import '../../Styles/Common/HighlightPane';
+@import '../../Styles/Common/Card';
+@import '../../Styles/Common/Input';
 
 form {
     display: flex;
@@ -8,11 +9,4 @@ form {
 }
 input {
     flex-shrink: 0;
-    margin: 4px;
-    padding: 6px 8px;
-    width: calc(50% - 8px);
-    font-size: 14px;
-    border: 1px solid #999999;
-    border-radius: 4px;
-    box-sizing: border-box;
 }

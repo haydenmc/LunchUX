@@ -1,23 +1,27 @@
 <template id="lunch-page-account-info">
     <!-- inject:css -->
     <!-- endinject -->
-    <h1>{{languageResources.accountInfoHeader}}</h1>
-    <p>
-        {{languageResources.accountInfoBlurb}}
-    </p>
-    <div class="highlightPane">
-        <div class="inner">
-            <h2>{{languageResources.accountInfoFormHeader}}</h2>
-            <form>
-                <input id="firstName" name="firstName" />
-                <input id="lastName" name="lastName" />
-                <input id="email" name="email" type="email" />
-                <input id="tel" name="email" type="tel" />
-                <input id="password" name="password" type="password" />
-                <div class="buttonBar">
-                    <button class="button">{{languageResources.accountInfoButtonNext}}</button>
-                </div>
-            </form>
+    <div class="cardPair">
+        <div class="description">
+            <h1>{{languageResources.accountInfoHeader}}</h1>
+            <p>
+                {{languageResources.accountInfoBlurb}}
+            </p>
+        </div>
+        <div class="card">
+            <div class="inner">
+                <h1>{{languageResources.accountInfoFormHeader}}</h1>
+                <form>
+                    <input id="firstName" name="firstName" />
+                    <input id="lastName" name="lastName" />
+                    <input id="email" name="email" type="email" />
+                    <input id="tel" name="email" type="tel" />
+                    <input id="password" name="password" type="password" />
+                    <div class="buttonBar">
+                        <button class="button">{{languageResources.buttonNext}}</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </template>

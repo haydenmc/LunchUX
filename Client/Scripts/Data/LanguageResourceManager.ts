@@ -1,4 +1,6 @@
 class LanguageResourceManager {
+    /* Common */
+    public buttonNext: IObservable<string> = new Observable<string>("");
     /* Introduction page */
     public introHeader: IObservable<string> = new Observable<string>("");
     public introBlurb: IObservable<string> = new Observable<string>("");
@@ -21,5 +23,15 @@ class LanguageResourceManager {
     public accountInfoPlaceholderEmail: IObservable<string> = new Observable<string>("");
     public accountInfoPlaceholderPhone: IObservable<string> = new Observable<string>("");
     public accountInfoPlaceholderPassword: IObservable<string> = new Observable<string>("");
-    public accountInfoButtonNext: IObservable<string> = new Observable<string>("");
+    /* Household role page */
+    public householdRoleHeader: IObservable<string> = new Observable<string>("");
+    public householdRoleBlurb: IObservable<string> = new Observable<string>("");
+    public householdRoleFormHeader: IObservable<string> = new Observable<string>("");
+    public householdRoleChild: IObservable<string> = new Observable<string>("");
+    public householdRoleAdult: IObservable<string> = new Observable<string>("");
+    /* Case number page */
+    public caseNumberHeader: IObservable<string> = new Observable<string>("");
+    public caseNumberBlurb: IObservable<string> = new Observable<string>("");
+    public caseNumberFormHeader: IObservable<string> = new Observable<string>("");
+    public caseNumberButtonNoCaseNumber: IObservable<string> = new Observable<string>("");
 }

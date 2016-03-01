@@ -1,0 +1,32 @@
+@import '../../Styles/Common/Card';
+
+.roles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    
+    .role {
+        width: 160px;
+        height: 160px;
+        border: 1px solid #999;
+        border-radius: 6px;
+        margin: 8px;
+        
+        img {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #999;
+            margin: 8px auto;
+            display: block;
+            border-radius: 50%;
+        }
+        
+        .title {
+            font-family: "Open Sans";
+            font-weight: 500;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
