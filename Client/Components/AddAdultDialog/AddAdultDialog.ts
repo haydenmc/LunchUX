@@ -21,6 +21,15 @@ class AddAdultDialog extends Component {
             ev.preventDefault();
             this.parentElement.removeChild(this);
         });
+        this.shadowRoot.querySelector("a.help.workEarningsHelp").addEventListener("click", (ev) => {
+            this.parentElement.appendChild(document.createElement("lunch-help-work-income"));
+        });
+        this.shadowRoot.querySelector("a.help.publicAssistanceHelp").addEventListener("click", (ev) => {
+            this.parentElement.appendChild(document.createElement("lunch-help-public-assistance"));
+        });
+        this.shadowRoot.querySelector("a.help.otherIncomeHelp").addEventListener("click", (ev) => {
+            this.parentElement.appendChild(document.createElement("lunch-help-other-income"));
+        });
     }
     
     public addAdult(): void {
